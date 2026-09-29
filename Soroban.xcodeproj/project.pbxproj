@@ -303,7 +303,7 @@
 			mainGroup = E30CE354E9C4EC0470F6C674;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				40BB462BC90BEB420F9484BF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F0C8A8B45D72C2001216FE41 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F4BE1496A6C81794C583C9EA /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */,
 			);
 			preferredProjectObjectVersion = 77;
@@ -646,9 +646,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		40BB462BC90BEB420F9484BF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		F0C8A8B45D72C2001216FE41 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ymvmj7dsyy-stack/Alamofire";
+			repositoryURL = "https://github.com/nf2nbm5m8f-oss/Alamofire";
 			requirement = {
 				kind = revision;
 				revision = 43bf208138a03e76cfc537d000760282c7a4b8e4;
@@ -667,7 +667,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		4EEB3C15A1D04C522843CED3 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 40BB462BC90BEB420F9484BF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = F0C8A8B45D72C2001216FE41 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		C0D86ACA8F90BF1F2629EAB4 /* AppsFlyerLib-Static */ = {
