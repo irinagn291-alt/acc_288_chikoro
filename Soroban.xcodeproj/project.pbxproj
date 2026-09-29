@@ -30,7 +30,6 @@
 		981FF5A54C59D225BC171EA6 /* DayTally.swift in Sources */ = {isa = PBXBuildFile; fileRef = F583C2969D255439C881DF87 /* DayTally.swift */; };
 		990877DF57B1065C3CA38343 /* BoardFold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A231BC46A07A91010E420C /* BoardFold.swift */; };
 		A6221ABBB50F0489F862EEDB /* OnboardingFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4CB14F618A4A217E9CE9FC /* OnboardingFlow.swift */; };
-		A8ECE468A5247481188F72D6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 926EF70CDF73003566F51D8F /* Info.plist */; };
 		AC2A2E47589D1C74BC10789D /* LapMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E4C69D1FB4FF2A280FDAD9D /* LapMark.swift */; };
 		B71510081ABAECA01DAA04F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C14EF30FD7B4C8F153D8FC /* Assets.xcassets */; };
 		C4A76AFF3743076BECA5E2C8 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7213BCBFACD2CEDD5ABE1E44 /* Counter.swift */; };
@@ -72,7 +71,6 @@
 		7D14556F7F5028E902D4D950 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		88A885D09D2D2827265E489B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C385A4EA94BD7F18433369F /* HistorySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySheet.swift; sourceTree = "<group>"; };
-		926EF70CDF73003566F51D8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		97A231BC46A07A91010E420C /* BoardFold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardFold.swift; sourceTree = "<group>"; };
 		9E4C69D1FB4FF2A280FDAD9D /* LapMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapMark.swift; sourceTree = "<group>"; };
 		A2AB3672B28ED9309983EB41 /* BoardChrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardChrome.swift; sourceTree = "<group>"; };
@@ -123,7 +121,6 @@
 				A2AB3672B28ED9309983EB41 /* BoardChrome.swift */,
 				0B8C20ED7825FE1E93C12FEB /* ContentView.swift */,
 				7D14556F7F5028E902D4D950 /* DesignTokens.swift */,
-				926EF70CDF73003566F51D8F /* Info.plist */,
 				DB4CB14F618A4A217E9CE9FC /* OnboardingFlow.swift */,
 				B9F998A73A35FC53964F8680 /* ReviewLaunch.swift */,
 				2DE4A24C8E6791FD7C6D23B3 /* SettingsSheet.swift */,
@@ -323,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71510081ABAECA01DAA04F2 /* Assets.xcassets in Resources */,
-				A8ECE468A5247481188F72D6 /* Info.plist in Resources */,
 				7283D9BC972C0132BD4D5358 /* Trebuchet MS Bold.ttf in Resources */,
 				7185271B65B7906FE34773F0 /* Trebuchet MS.ttf in Resources */,
 			);
