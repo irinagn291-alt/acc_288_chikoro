@@ -1,0 +1,19 @@
+The app requests no permissions. No permission prompt appears on a cold first launch or at any later point, and no usage-description string is shown.
+
+There is no login, no in-app purchase, no public or shared user-generated content, no account deletion flow, and no App Tracking Transparency prompt. People only type private row names on this device.
+
+Chikoro is a daily tally board for people who keep several everyday counts in one place. Rows share one circuit: only the lit bead accepts a tap, that tap adds one for today, and the light moves to the next bead. A dark bead is refused. A full circuit files a lap. Portrait only, dark appearance, iPhone and iPad. Minimum iOS 17.0.
+
+No credentials or demo account are needed. On a cold first launch the system launch screen appears (portrait, dark). A blank dark field can sit for a few seconds before the first page; if opening is slow, a spinner may show on that field. Onboarding is three pages with Skip at the top right and page number 1, 2, or 3 above the bottom button. Page 1: One tap order. Several everyday counts share one board. You tick the lit bead. Continue. Page 2: Tick the lit bead. That tap adds one for today and moves the light to the next bead. Continue. Page 3: A full circuit files a lap. A dark bead is refused. The light stays until you tick the lit one. Finish. Skip on any page or Finish on the last page seats Cups, Pages, and Calls, lights Cups, and opens the board with no sample ticks. Leaving before Skip or Finish returns to page 1. On Simulator only, a first empty launch can skip onboarding and already show those three rows, with one tick on each for the previous day, one lap, and Day closed marks for that day; today's counts are 0. That seed does not run on a physical device.
+
+There is no tab bar. The board shows Library, Stats, History, Settings, Counts today. Tick the lit seat., beads with Lit or Dark, Tick on the lit row, Laps, Ticks, Misses, and Undo. Tap the lit row or Tick to add one for today; a Dark row records a miss and does not add. Swipe down to close sheets (no Close button). Library: Row name, Add, Name, Rename, Archive; a blank name shows Name refused. Enter a name. Stats: Seat counts, Ticks, Laps, Open on a day, or Tick the lit seat, which on populated Stats only closes the sheet. Empty Stats and empty History use Add a counter or Tick the lit seat to seat Cups if needed and tick. History: Earlier, Later, and mark lines such as Tick Cups., Miss Pages., Lap filed., Undo Calls., Day closed Cups. Settings: Show onboarding, Erase the board, Contact. Show onboarding dismisses Settings and shows the three pages again; Skip or Finish returns to the board, seats Cups, Pages, and Calls if they are missing, un-archives those three if they were archived, restores those three names if they were renamed, and lights Cups. Erase the board opens Erase the board? with Counters and marks on this device are deleted. Erase the board clears every row and mark and treats onboarding as unfinished. Cancel leaves the board as it is. After erase, dismissing Settings shows onboarding again. Work on the board can be resumed after the app is left or killed. Open sheets are not restored.
+
+Data stays on this device. The on-screen control is Contact. It opens the support page.
+
+English UI. Day labels and numbers follow the device's region and calendar. No region lock. Behaviour does not differ by region except for those day labels and numbers.
+
+No licence or regulated-industry paperwork applies. The app is a Lifestyle daily tally board, not a regulated health, finance, or professional service.
+
+The app is a personal log only and gives no recommendations. It does not show health, medical, or product-health information.
+
+The app does not scan barcodes or QR codes.

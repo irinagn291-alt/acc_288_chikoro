@@ -1,0 +1,18 @@
+Chikoro is a daily tally board for people who keep several everyday counts in one place. Rows share one circuit: only the lit bead accepts a tap, that tap adds one for today, and the light moves to the next bead.
+
+• Several everyday counts on one board
+• Tick the lit bead only
+• A tap adds one for today and moves the light to the next bead
+• A dark bead is refused and records a miss
+• A full circuit files a lap
+• Undo the last accepted tick
+• Library: add, rename, reorder, and archive rows
+• Starter rows Cups, Pages, and Calls
+• Stats: seat counts, ticks, laps, and a day page
+• History: earlier and later days and that day's marks
+• Today's counts start at 0 on a new calendar day; closed days can show Day closed plus the seat name
+• Show onboarding
+• Erase the board
+• Contact
+
+Library, Stats, History, and Settings open as full-height sheets from the board, and data stays on this device.

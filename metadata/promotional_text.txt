@@ -1,0 +1,1 @@
+Keep several everyday counts on one board. Tick the lit bead to add one for today and move the light. A dark bead is refused. A full circuit files a lap.
