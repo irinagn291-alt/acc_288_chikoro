@@ -1,4 +1,4 @@
-<!-- gf-brief source=139542897f171832937e043b64122fe5583d7f2d77bce61a38c1dbd86474367e written=2026-09-29T17:55:33+03:00 -->
+<!-- gf-brief source=ebd31170536aa912b12caf138cf9e58cac6ee1106d9843dce26eb70cd72e1230 written=2026-09-30T08:47:37+03:00 -->
 # Chikoro
 
 ## What it is
@@ -7,7 +7,9 @@ Chikoro is a daily tally board for people who keep several everyday counts in on
 
 ## Launch and onboarding
 
-On a cold first launch the system launch screen appears (portrait, dark). A blank dark field can sit for a few seconds before the first page. If opening is slow, a spinner may show on that field. There is no sign-in and no permission prompt.
+On a cold first launch the system launch screen appears (portrait, dark). A blank dark field can sit for several seconds before the first page. If opening is slow, a spinner may show on that field. There is no sign-in.
+
+On first launch the system tracking prompt can appear over that field (or over the first page), using this usage string: **We use this identifier to personalize your experience and measure app performance.** The system buttons are the usual tracking choices. Allowing or declining does not change the board, the rows, or the copy.
 
 Onboarding is three pages. **Skip** is always at the top right. A page number **1**, **2**, or **3** (device number format) sits above the bottom button. Pages 1 and 2 use **Continue**; page 3 uses **Finish**. **Skip** on any page and **Finish** on the last page both end onboarding, seat three rows named **Cups**, **Pages**, and **Calls**, light **Cups**, and open the board.
 
@@ -15,7 +17,7 @@ Onboarding is three pages. **Skip** is always at the top right. A page number **
 2. Title: **Tick the lit bead.** Body: **That tap adds one for today and moves the light to the next bead.** Button: **Continue**.
 3. Title: **A full circuit files a lap.** Body: **A dark bead is refused. The light stays until you tick the lit one.** Button: **Finish**.
 
-Later launches skip these pages and open the board with the saved rows and marks. **Show onboarding** in Settings walks the same three pages again. Leaving the app before **Skip** or **Finish** returns to page **1** on the next launch; the page you were on is not saved.
+Later launches skip these pages and open the board with the saved rows and marks. The tracking prompt does not return after a choice is stored. **Show onboarding** in Settings walks the same three pages again. Leaving the app before **Skip** or **Finish** returns to page **1** on the next launch; the page you were on is not saved.
 
 ## Screens
 
@@ -37,7 +39,7 @@ The plate shows the lit row’s name, then **Counts today. Tick the lit seat.** 
 - **Tick refused. That bead is dark. Tick the lit seat.** when a dark row is tapped
 - **Tick refused.** when a tick cannot land
 
-Each row shows its name, a **Lit** or **Dark** chip, and today’s count. The lit row also shows **Tick**. Tapping the lit row (or **Tick**) adds one to that row for today, moves the light to the next row in board order, and may file a lap. Tapping a **Dark** row does not add to the count; it records a miss and leaves the light where it is. VoiceOver on the lit row is **Tick [name]. Lit.** On a dark row it is **[name]. Dark.**
+Each row shows its name, a **Lit** or **Dark** chip, and today’s count. The lit row also shows **Tick**. Tapping the lit row (or **Tick**) adds one to that row for today, moves the light to the next row in board order, and may file a lap. A short haptic plays on a successful tick. Tapping a **Dark** row does not add to the count; it records a miss, plays no haptic, and leaves the light where it is. VoiceOver on the lit row is **Tick [name]. Lit.** On a dark row it is **[name]. Dark.**
 
 Along the bottom of the list:
 
@@ -45,7 +47,7 @@ Along the bottom of the list:
 - **Ticks** — accepted taps today
 - **Misses** — refused dark taps today
 
-**Undo** reverses the last accepted tick, steps the light back, and removes a lap if that tick filed one. It does not undo a miss. When there is nothing to undo, **Undo** is faded and does not respond (VoiceOver: **Undo last tick**).
+**Undo** reverses the last accepted tick, steps the light back, removes a lap if that tick filed one, and plays a short haptic. It does not undo a miss. When there is nothing to undo, **Undo** is faded and does not respond (VoiceOver: **Undo last tick**).
 
 If every row is gone, the board shows **Board bare.**, **Add a counter to light the first bead.**, and **Add a counter**, which opens Library.
 
@@ -57,11 +59,11 @@ Title: **Library**.
 
 Empty: **Library empty.**, **Add a counter.**, a **Row name** field, and **Add**. The keyboard has **Done**.
 
-With rows: the same **Row name** field and **Add**, then one block per row with a **Name** field, **Rename**, and **Archive**. Drag handles stay on so rows can be reordered. Reorder does not move the light; the same row stays lit.
+With rows: the same **Row name** field and **Add**, then one block per row with a **Name** field, **Rename**, and **Archive**. Drag handles stay on so rows can be reordered. Reorder does not move the light; the same row stays lit. The keyboard still has **Done**. Submitting the keyboard on **Row name** also adds; submitting on **Name** also renames.
 
-- **Add** seats a new row. The first row on a bare board becomes lit. Later adds do not steal the light. A blank or whitespace name shows **Name refused. Enter a name.** and does not add.
+- **Add** seats a new row. The first row on a bare board becomes lit. Later adds do not steal the light. A blank or whitespace name shows **Name refused. Enter a name.** and does not add. Two rows may share the same name.
 - **Rename** saves that row’s **Name** field. A blank name shows **Name refused. Enter a name.**
-- **Archive** removes the row from the board and from Library. If that row was lit, the next remaining row becomes lit. If it was the last row, the board becomes **Board bare.** There is no restore control. Stats may still list the archived seat.
+- **Archive** removes the row from the board and from Library. If that row was lit, the next remaining row becomes lit. If it was the last row, the board becomes **Board bare.** There is no restore control. Stats may still list the archived seat. VoiceOver on the button is **Archive [name]**.
 
 If Library cannot be read: **Library unreadable.** and **Retry**.
 
@@ -71,7 +73,7 @@ Title: **Stats**.
 
 Empty (no ticks, laps, or day totals): **Stats empty.** and **Tick the lit seat. Totals land here.** The button is **Add a counter** when there are no rows, or **Tick the lit seat** when rows exist. Both act on this sheet: if there are no rows, a **Cups** row is seated and ticked; if rows exist, the lit seat is ticked. Totals then appear here. This does not open Library.
 
-With totals: **Seat counts**, **Open a day, or tick the lit seat.**, then **Ticks** and **Laps** (all accepted ticks and all laps, all days). Each seat shows its name, its latest day’s count (or **0**), **Lit seat** or **Dark seat**, and either **No day yet** or **Open** plus that day’s label (day number, then month and year in the device’s locale, for example **29 September 2026**). Seats with **No day yet** do not open. A seat with a day opens that day. **Tick the lit seat** here closes Stats and returns to the board; it does not tick.
+With totals: **Seat counts**, **Open a day, or tick the lit seat.**, then **Ticks** and **Laps** (all accepted ticks and all laps, all days). Each seat shows its name, its latest day’s count (or **0**), **Lit seat** or **Dark seat**, and either **No day yet** or **Open** plus that day’s label (day number, then month and year in the device’s locale, for example **30 September 2026**). Seats with **No day yet** do not open. A seat with a day opens that day. VoiceOver on a seat is **[name], [count]. Open this day.** **Tick the lit seat** here closes Stats and returns to the board; it does not tick (VoiceOver hint: **Returns to the lit seat.**).
 
 A day page uses that day’s label as the title, then **Seat counts for this day.** Each seat shows its count for that day. If there are marks, they appear as lines such as **Tick Cups.**, **Miss Pages.**, **Lap filed.**, **Undo Calls.**, **Day closed Cups.** At most six of those lines are shown. **Seat counts** returns to the totals list. **Tick the lit seat** closes Stats and returns to the board.
 
@@ -85,7 +87,7 @@ Empty (no marks yet): **History empty.**, **Marks for each day land here.**, and
 
 With marks: the selected day’s number and month–year, then **Earlier** and **Later**. Days are newest first, and today is always in the list. **Later** is faded on the newest day. **Earlier** is faded on the oldest day.
 
-A day with marks lists lines such as **Tick Cups.**, **Miss Pages.**, **Lap filed.**, **Undo Calls.**, **Day closed Cups.**
+A day with marks lists lines such as **Tick Cups.**, **Miss Pages.**, **Lap filed.**, **Undo Calls.**, **Day closed Cups.** If a seat has been deleted from the board, a tick, miss, or undo line may fall back to **Tick Row.**, **Miss Row.**, or **Undo Row.**; a Stats mark line in the same case may fall back to **Tick Seat.**, **Miss Seat.**, or **Undo Seat.** **Lap filed.** never includes a name. **Day closed** still uses the seat name when it is known.
 
 A day with no marks shows **This day's marks**, **No marks on this day.**, and either **Tap Earlier to open the day that has ticks.** or **Tick the lit seat to file the first mark.** Active seats show **0**. If there are no seats, **Add a counter, then tick the lit seat.** The bottom button is **Earlier** when an earlier day exists, otherwise **Tick the lit seat**, which files a tick on the board.
 
@@ -97,7 +99,7 @@ Title: **Settings**.
 
 Usual contents:
 
-- **Show onboarding** — dismisses Settings and shows the three onboarding pages again. **Skip** or **Finish** returns to the board, seats **Cups**, **Pages**, and **Calls** if they are missing, un-archives those three if they were archived, restores those three names if they were renamed, and lights **Cups**.
+- **Show onboarding** — dismisses Settings and shows the three onboarding pages again. **Skip** or **Finish** returns to the board, seats **Cups**, **Pages**, and **Calls** if they are missing, un-archives those three if they were archived, restores those three names if they were renamed, and lights **Cups**. Other rows the person added are left as they are. If a row already named **Cups** is present and the starter **Cups** row is not, the existing **Cups** is lit.
 - **Erase the board** — opens **Erase the board?** with **Counters and marks on this device are deleted.** **Erase the board** clears every row and mark and treats onboarding as unfinished. **Cancel** leaves the board as it is.
 - **Contact** — opens the support page.
 
@@ -127,6 +129,7 @@ If Settings cannot be read: **Settings unreadable.** and **Retry**.
 - Onboarding does not continue past the last page until **Finish** (or **Skip** on any page). **Continue** on pages 1 and 2 only advances.
 - Leaving before **Skip** or **Finish** shows page **1** again. That is intended.
 - A short blank field (sometimes with a spinner) can appear before onboarding. Wait; the first page follows.
+- The system tracking prompt can cover the blank field or the first page on first launch. Choose a system option; the board is unchanged either way.
 - **Add** and **Rename** refuse a blank name and show **Name refused. Enter a name.** Type a name, then try again.
 - **Undo** stays faded until at least one accepted tick exists. A miss does not enable it.
 - A **Dark** row never increments. Status becomes **Tick refused. That bead is dark. Tick the lit seat.** Tick the row marked **Lit**.
@@ -153,15 +156,19 @@ Rows, today’s counts, laps, misses, and history stay on this device and come b
 
 ## Permissions
 
-None.
+App Tracking Transparency, on first launch (when the app becomes active, before or over onboarding). Usage string: **We use this identifier to personalize your experience and measure app performance.**
+
+No camera, microphone, photos, or location prompt.
 
 ## Absent
 
-Genuinely absent: login or accounts, in-app purchase, ads, analytics, public or shared user-generated content, an account deletion flow, and an App Tracking Transparency prompt. People only type private row names on this device.
+Genuinely absent: login or accounts, in-app purchase, ads, public or shared user-generated content, and an account deletion flow. People only type private row names on this device.
+
+Not absent: analytics (the tracking prompt’s usage string says the app measures performance and personalizes the experience), and the App Tracking Transparency prompt.
 
 ## Data and support
 
-Data stays on this device. The erase confirmation says **Counters and marks on this device are deleted.**
+Counters and marks stay on this device. The erase confirmation says **Counters and marks on this device are deleted.**
 
 The on-screen control is **Contact**. It opens the support page.
 

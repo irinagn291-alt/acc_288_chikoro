@@ -64,7 +64,7 @@
 		2DE4A24C8E6791FD7C6D23B3 /* SettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSheet.swift; sourceTree = "<group>"; };
 		3878908C1FD8CFBCB31006BF /* MissMark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissMark.swift; sourceTree = "<group>"; };
 		3DE50CD334AE646F3095001A /* SorobanTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = SorobanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3FB3380F21056844E2133996 /* Soroban.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Soroban.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FB3380F21056844E2133996 /* Soroban.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Soroban.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5534FB26ED3313BC0DEE207B /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
 		7213BCBFACD2CEDD5ABE1E44 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		7B23E493F5BBF160C486295D /* SorobanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SorobanTests.swift; sourceTree = "<group>"; };
@@ -445,12 +445,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Soroban-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Chikoro;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this identifier to personalize your experience and measure app performance.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -460,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.soroban.board;
 				PRODUCT_NAME = Soroban;
 				SDKROOT = iphoneos;
@@ -541,12 +542,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Support/Soroban-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Chikoro;
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "We use this identifier to personalize your experience and measure app performance.";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -556,7 +558,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.soroban.board;
 				PRODUCT_NAME = Soroban;
 				SDKROOT = iphoneos;
@@ -647,7 +649,7 @@
 			repositoryURL = "https://github.com/nf2nbm5m8f-oss/Alamofire";
 			requirement = {
 				kind = revision;
-				revision = 43bf208138a03e76cfc537d000760282c7a4b8e4;
+				revision = 3ea8e93ec37a3ae5f255afb529ef20f438dd1903;
 			};
 		};
 		F4BE1496A6C81794C583C9EA /* XCRemoteSwiftPackageReference "AppsFlyerFramework-Static" */ = {

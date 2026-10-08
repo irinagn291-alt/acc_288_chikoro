@@ -1,15 +1,3 @@
-Version 1.0. Chikoro is a daily tally board for people who keep several everyday counts in one place.
-
-• Several everyday counts on one board
-• Tick the lit bead only
-• A tap adds one for today and moves the light to the next bead
-• A dark bead is refused and records a miss
-• A full circuit files a lap
-• Undo the last accepted tick
-• Library: add, rename, reorder, and archive rows
-• Starter rows Cups, Pages, and Calls
-• Stats: seat counts, ticks, laps, and a day page
-• History: earlier and later days and that day's marks
-• Show onboarding, Erase the board, and Contact
-
-Data stays on this device. There is no sign-in.
+Version 1.2 keeps Chikoro Pro polished and reliable.
+• Stability and performance improvements
+• Small refinements throughout the app
