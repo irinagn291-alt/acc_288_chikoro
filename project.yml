@@ -22,14 +22,10 @@ targets:
     platform: iOS
     sources:
     - path: Soroban
+      excludes:
+      - Info.plist
     resources:
     - path: PrivacyInfo.xcprivacy
-    info:
-      path: Soroban/Info.plist
-      properties:
-        UIAppFonts:
-        - Trebuchet MS.ttf
-        - Trebuchet MS Bold.ttf
     dependencies:
     - package: Alamofire
     - package: AppsFlyerLib
@@ -39,6 +35,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.soroban.board
         PRODUCT_NAME: Soroban
         GENERATE_INFOPLIST_FILE: 'YES'
+        INFOPLIST_KEY_NSUserTrackingUsageDescription: "We use this identifier to personalize your experience and measure app performance."
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: 'NO'
         INFOPLIST_KEY_CFBundleDisplayName: Chikoro
         INFOPLIST_KEY_UILaunchScreen_Generation: 'YES'
