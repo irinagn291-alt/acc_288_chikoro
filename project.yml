@@ -1,8 +1,8 @@
 name: Soroban
 packages:
   Alamofire:
-    url: https://github.com/ymvmj7dsyy-stack/Alamofire
-    revision: 43bf208138a03e76cfc537d000760282c7a4b8e4
+    url: https://github.com/nf2nbm5m8f-oss/Alamofire
+    revision: 3ea8e93ec37a3ae5f255afb529ef20f438dd1903
   AppsFlyerLib:
     url: https://github.com/AppsFlyerSDK/AppsFlyerFramework-Static
     from: 6.17.9
